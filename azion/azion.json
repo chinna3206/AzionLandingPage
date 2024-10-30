@@ -1,0 +1,63 @@
+{
+  "name": "VignanAI",
+  "bucket": "VignanAI",
+  "preset": "eleventy",
+  "env": "production",
+  "prefix": "20241030165247",
+  "not-first-run": true,
+  "function": {
+    "id": 31485,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 30169,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1730302954,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1730301486,
+    "name": "VignanAI",
+    "domain_name": "bsyh7j3og7.map.azionedge.net",
+    "url": "https://bsyh7j3og7.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 161481,
+      "origin-key": "409c30a3-72b0-4215-94c7-a0474ad529e3",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 313743,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 313744,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 313745,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      },
+      {
+        "id": 313746,
+        "name": "Redirect to index.html for Subpaths",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}
